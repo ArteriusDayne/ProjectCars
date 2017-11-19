@@ -15,6 +15,7 @@ import { Auth } from '../providers/auth/auth';
 
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireAuthModule } from 'angularfire2/auth';
+import { FirebaseProvider } from '../providers/firebase/firebase';
 
 // add your info here
 export const firebaseConfig = {
@@ -52,7 +53,8 @@ export const firebaseConfig = {
   providers: [
     StatusBar,
     SplashScreen,
-    Auth
+    Auth,
+    FirebaseProvider
   ]
 })
 export class AppModule { }
